@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://hags-club.com/css=site,menu,pirobox">
+    <script type="text/javascript"  src="script/price-switch.js"></script>
+</head>
+<body>
+
+<div id="page">
+    <div class="box shop">
+        <!--Shop start-->
+
+        <!-- shopSwitch header start -->
+        <div class="new_shop">
+            <div class="shop_switch">
+                <input type="radio" name="shop" id="new_shop" >
+                <label for="new_shop">New Shop</label>
+
+                <input type="radio" name="shop" id="old_shop" checked>
+                <label for="old_shop">Old Shop</label>
+            </div>
+            <!--    shopSwitch header end     -->
+
+            <!-- ******* NEW SHOP ******* -->
+            <div class="tab_1 hidden">
+                <!-- shopSwitch container start -->
+                <div class="shop_container">
+                    <form method="get" id="newShopForm">
+                    <div class="table_container">
+
+                        <div class="row">
+                            <div class="left_col">
+                                <div>Select Plan</div>
+                            </div>
+
+
+                            <!-- Plan selection -->
+                            <div class="right_col">
+                                <div class="plan_container">
+
+                                    <!-- all hacks -->
+                                    <div class="all_hacks">
+                                        <input type="radio" value="1" name="plan" id="1_month_all">
+                                        <label for="1_month_all">1 month - <span id="oneMonthPrice">20 USD</span></label>
+
+                                        <input type="radio" value="2" name="plan" id="3_months_all">
+                                        <label for="3_months_all">3 months - <span id="threeMonthsPrice">55 USD</span></label>
+
+                                        <input type="radio" value="3" name="plan" id="6_months_all">
+                                        <label for="6_months_all">6 months - <span id="sixMonthsPrice">90 USD</span></label>
+
+                                        <input type="radio" value="4" name="plan" id="12_months_all" checked>
+                                        <label for="12_months_all">1 year - <span id="oneYearPrice">150 USD</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="left_col">
+                                <div>Select Type</div>
+                            </div>
+
+
+                            <!-- Type selection -->
+                            <div class="right_col">
+                                <div class="type_container">
+                                    <input type="radio" value="all" name="type" id="all_hacks" checked>
+                                    <label for="all_hacks">All hacks</label>
+
+                                    <input type="radio" value="small" name="type" id="small_pack">
+                                    <label for="small_pack">Small pack</label>
+
+                                    <input type="radio" value="single" name="type" id="single_hack">
+                                    <label for="single_hack">Single hack</label>
+
+                                    <!-- ***** Price switch script ***** -->
+                                    <script>
+                                        var listSelect = new PriceSwitch ({
+                                            typeBlock: document.querySelector('.type_container'),
+                                            planBlock: document.querySelector('.plan_container'),
+                                            priceObj: {
+                                                first: [20,55,90,150],
+                                                second: [15,40,65,105],
+                                                third: [10,27,45,72]
+                                            }
+                                    });
+                                    </script>
+
+                                    <div class="spacer"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="left_col">
+                                <div>Select Method</div>
+                            </div>
+
+
+                            <!-- Method Selection -->
+                            <div class="right_col">
+                                <div class="method_container">
+                                    <input type="radio" value="paypal" name="method" id="paypal" checked>
+                                    <label for="paypal">Paypal</label>
+
+                                    <input type="radio" value="qiwi" name="method" id="qiwi">
+                                    <label for="qiwi">Qiwi</label>
+
+                                    <input type="radio" value="skrill" name="method" id="skrill">
+                                    <label for="skrill">Skrill</label>
+
+                                    <div class="spacer"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="left_col"></div>
+
+
+                            <!-- E-mail and buy -->
+                            <div class="right_col">
+                                <div class="shop_data_row">
+                                    <input type="email" name="eml" placeholder="enter your e-mail">
+                                    <button type="submit">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <!-- shopSwitch container end -->
+
+
+                <div class="shop_type_description">
+                    <div class="table_container">
+                        <div class="row">
+                            <div class="left_col">
+                                <div>All hacks</div>
+                            </div>
+                            <div class="right_col">You get access to all our alive and in development hacks
+                                + you get <span class="highlight">early access</span> to new hacks which we release
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left_col">
+                                <div>Small pack</div>
+                            </div>
+                            <div class="right_col">Group of game sorted by type, you select one after purchase
+                                <a href="">MMOrpg hacks</a> or <a href="">FPS hacks</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="left_col">
+                                <div>Single hack</div>
+                            </div>
+                            <div class="right_col">Single hack access, you can select which one after purchase
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- shopSwitch end -->
+
+
+            </div>
+        </div>
+
+
+        <!-- ******* OLD SHOP ******* -->
+        <div class="tab_2">
+            <div class="box shop">
+                <noscript>Dear noscript user - use the old 1337 haxor shop or switch the scripts ON to use a proper
+                    one.
+                </noscript>
+                <div class="header">Shop</div>
+                Price:All hags package + early access for new ones:
+                <ul>
+                    <li>1 month 2000 points - 20 USD</li>
+                    <li>3 months 5500 points - 55 USD</li>
+                    <li>6 months 9000 points - 90 USD</li>
+                    <li>12 months 15000 points - 150 USD</li>
+                </ul>
+                Single hag:
+                <ul>
+                    <li>1 month (1000 points) - 10 USD</li>
+                    <li>3 months (2700 points) - 27 USD</li>
+                    <li>6 months (4500 points) - 45 USD</li>
+                    <li>12 months (7200 points) - 72 USD</li>
+                </ul>
+                Mmorpg hags package (Wildstar, AoC, GW2, TSW, SWTOR):
+                <ul>
+                    <li>1 month 1500 points - 15 USD</li>
+                    <li>3 months 4000 points - 40 USD</li>
+                    <li>6 months 6500 points - 65 USD</li>
+                    <li>12 months 10500 points - 105 USD</li>
+                </ul>
+                FPS hags package (PS2, APB, BF4, Firefall, Titanfall):
+                <ul>
+                    <li>1 month 1500 points - 15 USD</li>
+                    <li>3 months 4000 points - 40 USD</li>
+                    <li>6 months 6500 points - 65 USD</li>
+                    <li>12 months 10500 points - 105 USD</li>
+                </ul>
+                If you got Paypal or QIWI - you can pay right here with automatic service.<br>
+                If you need other payment option, read <a href="/forum/showthread.php?t=82"><b>FAQ &amp; registration
+                guide</b></a></div>
+            <form method="get" action="?ps=paypal">
+                <div class="box login" style="height:172px;"><h1>PayPal</h1>
+
+                    <div class="lde">
+                        <div class="ldl">
+                            E-mail:
+                        </div>
+                        <div class="ldr">
+                            <input type="email" name="eml" value=""
+                                   style="width: 300px; height: 20px; padding: 3px 0 1px 4px; font-size: 15px; line-height: 16px; margin: 0;">
+                        </div>
+                    </div>
+                    <div class="lde">
+                        <div class="ldl">
+                            Action:
+                        </div>
+                        <div class="ldl" style="width: 306px;">
+                            <select class="select" name="key"
+                                    style="width: 306px; height: 27px; padding: 4px; font-size: 15px; line-height: 16px; margin: 0;">
+                                <option value="0">Buy key 500 points</option>
+                                <option selected="" value="1">Buy key 1000 points</option>
+                                <option value="2">Buy key 1500 points</option>
+                                <option value="3">Buy key 2000 points</option>
+                                <option value="4">Buy key 2700 points</option>
+                                <option value="5">Buy key 3000 points</option>
+                                <option value="6">Buy key 4000 points</option>
+                                <option value="7">Buy key 4500 points</option>
+                                <option value="8">Buy key 5500 points</option>
+                                <option value="9">Buy key 6500 points</option>
+                                <option value="10">Buy key 7200 points</option>
+                                <option value="11">Buy key 9000 points</option>
+                                <option value="12">Buy key 15000 points</option>
+                                <option value="-1">Query key by transaction ID</option>
+                            </select></div>
+                    </div>
+                    <div class="lde">
+                        <div class="ldl">
+                            Currency:
+                        </div>
+                        <div class="ldl" style="width: 196px;">
+                            <select class="select" name="currency"
+                                    style="width: 100px; height: 27px; padding: 4px; font-size: 15px; line-height: 16px; margin: 0;">
+                                <option value="0">USD</option>
+                                <option value="1">RUB</option>
+                            </select></div>
+                        <div class="ldl">
+                            <input type="submit" value="Continue" class="button"
+                                   style="width: 110px; height: 27px; margin: 0;"></div>
+                    </div>
+                </div>
+            </form>
+            <form method="get" action="?ps=qiwi">
+                <div class="box login" style="height:154px;"><h1><a href="https://qiwi.ru/">QIWI</a></h1>
+
+                    <div class="lde">
+                        <div class="ldl">
+                            Action:
+                        </div>
+                        <div class="ldl" style="width: 306px;">
+                            <select class="select" name="key"
+                                    style="width: 306px; height: 27px; padding: 4px; font-size: 15px; line-height: 16px; margin: 0;">
+                                <option value="0">Ключ 500 очей: 175 РУБ</option>
+                                <option selected="" value="1">Ключ 1000 очей: 350 РУБ</option>
+                                <option value="2">Ключ 1500 очей: 525 РУБ</option>
+                                <option value="3">Ключ 2000 очей: 700 РУБ</option>
+                                <option value="4">Ключ 2700 очей: 945 РУБ</option>
+                                <option value="5">Ключ 3000 очей: 1050 РУБ</option>
+                                <option value="6">Ключ 4000 очей: 1400 РУБ</option>
+                                <option value="7">Ключ 4500 очей: 1575 РУБ</option>
+                                <option value="8">Ключ 5500 очей: 1925 РУБ</option>
+                                <option value="9">Ключ 6500 очей: 2275 РУБ</option>
+                                <option value="10">Ключ 7200 очей: 2520 РУБ</option>
+                                <option value="11">Ключ 9000 очей: 3150 РУБ</option>
+                                <option value="12">Ключ 15000 очей: 5250 РУБ</option>
+                            </select></div>
+                    </div>
+                    <div class="lde">
+                        <div class="ldl">
+                            Currency:
+                        </div>
+                        <div class="ldl" style="width: 196px;">
+                            <select class="select" name="currency"
+                                    style="width: 100px; height: 27px; padding: 4px; font-size: 15px; line-height: 16px; margin: 0;">
+                                <option value="1">RUB</option>
+                            </select></div>
+                        <div class="ldl">
+                            <input type="submit" value="Continue" class="button"
+                                   style="width: 110px; height: 27px; margin: 0;"></div>
+                    </div>
+                    <div class="lde">
+                        <div class="ldl" style="width: 296px; font-size: 11px; margin-top: 6px;">
+                            <a href="?ps=qiwi&amp;key=-1">Query key by transaction ID</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="script/shop-switch.js"></script>
+<script type="text/javascript" src="script/method-switch.js"></script>
+</body>
+</html>

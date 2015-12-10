@@ -1,0 +1,37 @@
+@import "../utility";
+
+.shop_type_description {
+  margin: 10px auto 0;
+  background: none;
+  width: 660px;
+
+  & .table_container {
+    font-size: $font-big;
+    margin: 15px 93px 0 66px;
+  }
+  & .right_col {
+    height: 50px;
+    line-height: 1.2em;
+    font-size: $font-small;
+    font-weight: normal;
+    display: table-cell;
+  }
+  & .left_col {
+    display: table-cell;
+    width: 153px;
+    & div {
+      position: relative;
+      top: 6px;
+    }
+  }
+  & .row {
+    display: table-row;
+  }
+  & .highlight {
+    color: $highlight-color;
+  }
+  & a {
+    color: $highlight-color !important;
+    text-decoration: underline !important;
+  }
+}

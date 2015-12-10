@@ -1,0 +1,22 @@
+@import "../_utility";
+
+
+.shop_switch {
+  @extend %cf;
+  width: 240px;
+  margin: 10px auto;
+  @extend %button;
+  & label {
+    display: block;
+    float:left;
+    font-size: $font-big;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+}
+
+
+
+
